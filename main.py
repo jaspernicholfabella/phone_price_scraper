@@ -32,7 +32,7 @@ def scrape_phone_links(driver,url):
                 phone_models.append('iphone-3-g-s')
                 continue
             phone_models.append(iphone)
-
+    print(phone_models)
     return phone_models
 
 
@@ -86,42 +86,57 @@ def main():
         original_url = 'https://www.ecoatm.com/a/devices/apple'
         phone_models = scrape_phone_links(driver,original_url)
         csv_columns = ['model','carrier','price', 'power_on', 'screen_light_up', 'screen_cracks']
+        file_exists = os.path.isfile('data.csv')
+        with open('data.csv','a',newline='') as csvfile:
+            fieldnames = ['Model','Memory Size','Carrier Name','Price','Power On','Screen Light Up Correctly','Cracks Anywhere']
+            writer = csv.DictWriter(csvfile,fieldnames = fieldnames)
 
-        for models in phone_models:
-            new_url = f'{original_url}/{models}'
-            carrier_list = ['cricket','sprint','us-cellular','at-t','other','verizon','t-mobile','metropcs','unlocked']
-            try:
-                driver.get(new_url)
-                first_scrape = True
-                memory_size_element = driver.find_elements_by_xpath("//div[contains(@class,'MuiGrid-root MuiGrid-container')]/div/button/span/div/span")
-                memory_size = []
-                for size_element in memory_size_element:
-                    memory_size.append(str(size_element.text).lower())
+            if not file_exists:
+                writer.writeheader()
 
-                model = driver.find_element_by_xpath("//div[contains(text(),'iPhone')]").text
+            for models in phone_models:
+                new_url = f'{original_url}/{models}'
+                carrier_list = ['cricket','sprint','us-cellular','at-t','other','verizon','t-mobile','metropcs','unlocked']
+                try:
+                    driver.get(new_url)
+                    first_scrape = True
+                    memory_size_element = driver.find_elements_by_xpath("//div[contains(@class,'MuiGrid-root MuiGrid-container')]/div/button/span/div/span")
+                    memory_size = []
+                    for size_element in memory_size_element:
+                        memory_size.append(str(size_element.text).lower())
 
-                #crawling through each page and scraping the data into a list of dictionary
-                for size in memory_size:
-                    try:
-                        for carrier in carrier_list:
-                            try:
-                                scrape_url = f'{new_url}/{size}/{carrier}'
-                                device_state = ['power_on', 'screen_light_up', 'screen_cracks']
-                                device_state_combination = [list(zip(device_state, x)) for x in itertools.product([True, False], repeat=len(device_state))]
-                                for dev_state in device_state_combination:
-                                    try:
-                                        power_on = dev_state[0][1];screen_light_up =dev_state[1][1];screen_cracks=dev_state[2][1]
-                                        price = scrape_data(driver,scrape_url,power_on=power_on,screen_light_up=screen_light_up,screen_cracks=screen_cracks,first_scrape=first_scrape)
-                                        print(f'{model}|{size}|{carrier}|{price}|{power_on}|{screen_light_up}|{screen_cracks}')
-                                        first_scrape = False
-                                    except Exception as e:
-                                        print(e);print('error in : dev_state')
-                            except Exception as e:
-                                print(e);print('error in : carrier')
-                    except Exception as e:
-                        print(e);print('error in : size')
-            except Exception as e:
-                print(e);print('error in : phone_models')
+                    model = driver.find_element_by_xpath("//div[contains(text(),'iPhone')]").text
+
+                    #crawling through each page and scraping the data into a list of dictionary
+                    for size in memory_size:
+                        try:
+                            for carrier in carrier_list:
+                                try:
+                                    scrape_url = f'{new_url}/{size}/{carrier}'
+                                    device_state = ['power_on', 'screen_light_up', 'screen_cracks']
+                                    device_state_combination = [list(zip(device_state, x)) for x in itertools.product([True, False], repeat=len(device_state))]
+                                    for dev_state in device_state_combination:
+                                        try:
+                                            power_on = dev_state[0][1];screen_light_up =dev_state[1][1];screen_cracks=dev_state[2][1]
+                                            price = scrape_data(driver,scrape_url,power_on=power_on,screen_light_up=screen_light_up,screen_cracks=screen_cracks,first_scrape=first_scrape)
+                                            print(f'{model}|{size}|{carrier}|{price}|{power_on}|{screen_light_up}|{screen_cracks}')
+                                            writer.writerow({
+                                                'Model' : model,
+                                                'Memory Size': size,
+                                                'Carrier Name':carrier,
+                                                'Price':price,
+                                                'Power On':power_on,
+                                                'Screen Light Up Correctly':screen_light_up,
+                                                'Cracks Anywhere':screen_cracks})
+                                            first_scrape = False
+                                        except Exception as e:
+                                            print(e);print('error in : dev_state')
+                                except Exception as e:
+                                    print(e);print('error in : carrier')
+                        except Exception as e:
+                            print(e);print('error in : size')
+                except Exception as e:
+                    print(e);print('error in : phone_models')
 
     except Exception as e:
         print(e);print('error in url')
