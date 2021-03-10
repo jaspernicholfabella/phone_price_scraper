@@ -93,15 +93,19 @@ def main():
             try:
                 driver.get(new_url)
                 first_scrape = True
-                memory_size = driver.find_elements_by_xpath("//div[contains(@class,'MuiGrid-root MuiGrid-container')]/div/button/span/div/span")
-                model = driver.find_element_by_xpath("//div[contains(text(),'iPhone')]").text
-                #crawling through each page and scraping the data into a list of dictionary
+                memory_size_element = driver.find_elements_by_xpath("//div[contains(@class,'MuiGrid-root MuiGrid-container')]/div/button/span/div/span")
+                memory_size = []
+                for size_element in memory_size_element:
+                    memory_size.append(str(size_element.text).lower())
 
+                model = driver.find_element_by_xpath("//div[contains(text(),'iPhone')]").text
+
+                #crawling through each page and scraping the data into a list of dictionary
                 for size in memory_size:
                     try:
                         for carrier in carrier_list:
                             try:
-                                scrape_url = f'{new_url}/{str(size.text).lower()}/{carrier}'
+                                scrape_url = f'{new_url}/{size}/{carrier}'
                                 device_state = ['power_on', 'screen_light_up', 'screen_cracks']
                                 device_state_combination = [list(zip(device_state, x)) for x in itertools.product([True, False], repeat=len(device_state))]
                                 for dev_state in device_state_combination:
