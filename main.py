@@ -58,6 +58,8 @@ def scrape_data(driver,url,power_on=True,screen_light_up=True,screen_cracks=Fals
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[@data-tracking-id='regional-no']"))).click()
     driver.implicitly_wait(5)
     WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "//*[@alt='edit']")))
+
+
     try:
         return driver.find_element_by_xpath('//sup/ancestor::h4').text
     except:
@@ -79,8 +81,7 @@ def main():
     try:
         original_url = 'https://www.ecoatm.com/a/devices/apple'
         phone_models = scrape_phone_links(driver,original_url)
-        data = []
-        csv_columns = ['price', 'power_on', 'screen_light_up', 'screen_cracks']
+        csv_columns = ['model','carrier','price', 'power_on', 'screen_light_up', 'screen_cracks']
 
         for models in phone_models:
             new_url = f'{original_url}/{models}'
@@ -89,40 +90,32 @@ def main():
                 driver.get(new_url)
                 first_scrape = True
                 memory_size = driver.find_elements_by_xpath("//div[contains(@class,'MuiGrid-root MuiGrid-container')]/div/button/span/div/span")
+                model = driver.find_element_by_xpath("//div[contains(text(),'iPhone')]").text
                 #crawling through each page and scraping the data into a list of dictionary
+
                 for size in memory_size:
-                    for carrier in carrier_list:
-                        scrape_url = f'{new_url}/{str(size.text).lower()}/{carrier}'
-                        device_state = ['power_on', 'screen_light_up', 'screen_cracks']
-                        device_state_combination = [list(zip(device_state, x)) for x in itertools.product([True, False], repeat=len(device_state))]
-                        for dev_state in device_state_combination:
-                            data.append({
-                                'price':scrape_data(driver,scrape_url,power_on=dev_state[0][1],screen_light_up=dev_state[1][1],screen_cracks=dev_state[2][1],first_scrape=first_scrape),
-                                'power_on':dev_state[0][1],
-                                'screen_light_up':dev_state[1][1],
-                                'screen_cracks' : dev_state[2][1]
-                            })
-                            first_scrape = False
-
-                #generating the csv file of the scraped data
-                csv_file = "Prices.csv"
-                try:
-                    with open(csv_file, 'w') as csvfile:
-                        writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-                        writer.writeheader()
-                        for d in data:
-                            writer.writerow(d)
-                except IOError:
-                    print("I/O error")
-
+                    try:
+                        for carrier in carrier_list:
+                            scrape_url = f'{new_url}/{str(size.text).lower()}/{carrier}'
+                            device_state = ['power_on', 'screen_light_up', 'screen_cracks']
+                            device_state_combination = [list(zip(device_state, x)) for x in itertools.product([True, False], repeat=len(device_state))]
+                            for dev_state in device_state_combination:
+                                try:
+                                    power_on = dev_state[0][1];screen_light_up =dev_state[1][1];screen_cracks=dev_state[2][1]
+                                    price = scrape_data(driver,scrape_url,power_on=power_on,screen_light_up=screen_light_up,screen_cracks=screen_cracks,first_scrape=first_scrape)
+                                    print(f'{model}|{carrier}|{price}|{power_on}|{screen_light_up}|{screen_cracks}')
+                                    first_scrape = False
+                                except Exception as e:
+                                    print(e)
+                    except Exception as e:
+                        print(e)
             except Exception as e:
                 print(e)
-
-        driver.close()
 
     except Exception as e:
         print(e)
 
+    driver.close()
 
 if __name__ == "__main__":
     main()
