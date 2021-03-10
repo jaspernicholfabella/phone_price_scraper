@@ -112,7 +112,7 @@ def main():
                                     try:
                                         power_on = dev_state[0][1];screen_light_up =dev_state[1][1];screen_cracks=dev_state[2][1]
                                         price = scrape_data(driver,scrape_url,power_on=power_on,screen_light_up=screen_light_up,screen_cracks=screen_cracks,first_scrape=first_scrape)
-                                        print(f'{model}|{carrier}|{price}|{power_on}|{screen_light_up}|{screen_cracks}')
+                                        print(f'{model}|{size}|{carrier}|{price}|{power_on}|{screen_light_up}|{screen_cracks}')
                                         first_scrape = False
                                     except Exception as e:
                                         print(e);print('error in : dev_state')
