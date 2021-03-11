@@ -1,4 +1,5 @@
 import os
+import os.path
 import time
 import itertools
 from selenium import webdriver
@@ -85,9 +86,9 @@ def main():
         file_exists = os.path.isfile(f'{os.getcwd()}\\data.csv')
         with open(f'{os.getcwd()}\\data.csv','a',newline='') as csvfile:
             fieldnames = ['Model','MemorySize','CarrierName','Price','PowerOn','ScreenLightUpCorrectly','CracksAnywhere']
-            writer = csv.DictWriter(csvfile,fieldnames = fieldnames)
+            writer = csv.DictWriter(csvfile,fieldnames=fieldnames)
 
-            if not file_exists:
+            if file_exists == False:
                 writer.writeheader()
 
             for models in phone_models:
@@ -119,7 +120,7 @@ def main():
                                             first_scrape = False
                                             try:
                                                 writer.writerow({
-                                                    'Model' : str(model),
+                                                    'Model' : model,
                                                     'MemorySize': str(size),
                                                     'CarrierName':str(carrier),
                                                     'Price':str(price),
