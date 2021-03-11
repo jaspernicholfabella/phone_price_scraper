@@ -35,7 +35,6 @@ def scrape_phone_links(driver,url):
     print(phone_models)
     return phone_models
 
-
 def scrape_data(driver,url,power_on=True,screen_light_up=True,screen_cracks=False,first_scrape=False):
     full_url = url
     driver.get(full_url)
@@ -69,10 +68,6 @@ def scrape_data(driver,url,power_on=True,screen_light_up=True,screen_cracks=Fals
     except:
         return "0"
 
-
-
-
-
 def main():
     #setting up selenium chrome driver
     chrome_options = webdriver.ChromeOptions()
@@ -86,9 +81,10 @@ def main():
         original_url = 'https://www.ecoatm.com/a/devices/apple'
         phone_models = scrape_phone_links(driver,original_url)
         csv_columns = ['model','carrier','price', 'power_on', 'screen_light_up', 'screen_cracks']
-        file_exists = os.path.isfile('data.csv')
-        with open('data.csv','a',newline='') as csvfile:
-            fieldnames = ['Model','Memory Size','Carrier Name','Price','Power On','Screen Light Up Correctly','Cracks Anywhere']
+
+        file_exists = os.path.isfile(f'{os.getcwd()}\\data.csv')
+        with open(f'{os.getcwd()}\\data.csv','a',newline='') as csvfile:
+            fieldnames = ['Model','MemorySize','CarrierName','Price','PowerOn','ScreenLightUpCorrectly','CracksAnywhere']
             writer = csv.DictWriter(csvfile,fieldnames = fieldnames)
 
             if not file_exists:
@@ -120,15 +116,18 @@ def main():
                                             power_on = dev_state[0][1];screen_light_up =dev_state[1][1];screen_cracks=dev_state[2][1]
                                             price = scrape_data(driver,scrape_url,power_on=power_on,screen_light_up=screen_light_up,screen_cracks=screen_cracks,first_scrape=first_scrape)
                                             print(f'{model}|{size}|{carrier}|{price}|{power_on}|{screen_light_up}|{screen_cracks}')
-                                            writer.writerow({
-                                                'Model' : model,
-                                                'Memory Size': size,
-                                                'Carrier Name':carrier,
-                                                'Price':price,
-                                                'Power On':power_on,
-                                                'Screen Light Up Correctly':screen_light_up,
-                                                'Cracks Anywhere':screen_cracks})
                                             first_scrape = False
+                                            try:
+                                                writer.writerow({
+                                                    'Model' : str(model),
+                                                    'MemorySize': str(size),
+                                                    'CarrierName':str(carrier),
+                                                    'Price':str(price),
+                                                    'PowerOn':str(power_on),
+                                                    'ScreenLightUpCorrectly':str(screen_light_up),
+                                                    'CracksAnywhere':str(screen_cracks)})
+                                            except Exception as e:
+                                                print(e)
                                         except Exception as e:
                                             print(e);print('error in : dev_state')
                                 except Exception as e:

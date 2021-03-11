@@ -1,0 +1,314 @@
+iPhone 12 Mini,64gb,cricket,$190,True,True,True
+iPhone 12 Mini,64gb,cricket,$245,True,True,False
+iPhone 12 Mini,64gb,cricket,$190,True,False,True
+iPhone 12 Mini,64gb,cricket,$190,True,False,False
+iPhone 12 Mini,64gb,cricket,$105,False,True,True
+iPhone 12 Mini,64gb,cricket,$140,False,True,False
+iPhone 12 Mini,64gb,cricket,$105,False,False,True
+iPhone 12 Mini,64gb,cricket,$105,False,False,False
+iPhone 12 Mini,64gb,sprint,$190,True,True,True
+iPhone 12 Mini,64gb,sprint,$245,True,True,False
+iPhone 12 Mini,64gb,sprint,$190,True,False,True
+iPhone 12 Mini,64gb,sprint,$190,True,False,False
+iPhone 12 Mini,64gb,sprint,$105,False,True,True
+iPhone 12 Mini,64gb,sprint,$140,False,True,False
+iPhone 12 Mini,64gb,sprint,$105,False,False,True
+iPhone 12 Mini,64gb,sprint,$105,False,False,False
+iPhone 12 Mini,64gb,us-cellular,$190,True,True,True
+iPhone 12 Mini,64gb,us-cellular,$245,True,True,False
+iPhone 12 Mini,64gb,us-cellular,$190,True,False,True
+iPhone 12 Mini,64gb,us-cellular,$190,True,False,False
+iPhone 12 Mini,64gb,us-cellular,$105,False,True,True
+iPhone 12 Mini,64gb,us-cellular,$140,False,True,False
+iPhone 12 Mini,64gb,us-cellular,$105,False,False,True
+iPhone 12 Mini,64gb,us-cellular,$105,False,False,False
+iPhone 12 Mini,64gb,at-t,$190,True,True,True
+iPhone 12 Mini,64gb,at-t,$245,True,True,False
+iPhone 12 Mini,64gb,at-t,$190,True,False,True
+iPhone 12 Mini,64gb,at-t,$190,True,False,False
+iPhone 12 Mini,64gb,at-t,$105,False,True,True
+iPhone 12 Mini,64gb,at-t,$140,False,True,False
+iPhone 12 Mini,64gb,at-t,$105,False,False,True
+iPhone 12 Mini,64gb,at-t,$105,False,False,False
+iPhone 12 Mini,64gb,other,$190,True,True,True
+iPhone 12 Mini,64gb,other,$245,True,True,False
+iPhone 12 Mini,64gb,other,$190,True,False,True
+iPhone 12 Mini,64gb,other,$190,True,False,False
+iPhone 12 Mini,64gb,other,$105,False,True,True
+iPhone 12 Mini,64gb,other,$140,False,True,False
+iPhone 12 Mini,64gb,other,$105,False,False,True
+iPhone 12 Mini,64gb,other,$105,False,False,False
+iPhone 12 Mini,64gb,verizon,$190,True,True,True
+iPhone 12 Mini,64gb,verizon,$245,True,True,False
+iPhone 12 Mini,64gb,verizon,$190,True,False,True
+iPhone 12 Mini,64gb,verizon,$190,True,False,False
+iPhone 12 Mini,64gb,verizon,$105,False,True,True
+iPhone 12 Mini,64gb,verizon,$140,False,True,False
+iPhone 12 Mini,64gb,verizon,$105,False,False,True
+iPhone 12 Mini,64gb,verizon,$105,False,False,False
+iPhone 12 Mini,64gb,t-mobile,$190,True,True,True
+iPhone 12 Mini,64gb,t-mobile,$245,True,True,False
+iPhone 12 Mini,64gb,t-mobile,$190,True,False,True
+iPhone 12 Mini,64gb,t-mobile,$190,True,False,False
+iPhone 12 Mini,64gb,t-mobile,$105,False,True,True
+iPhone 12 Mini,64gb,t-mobile,$140,False,True,False
+iPhone 12 Mini,64gb,t-mobile,$105,False,False,True
+iPhone 12 Mini,64gb,t-mobile,$105,False,False,False
+iPhone 12 Mini,64gb,metropcs,$190,True,True,True
+iPhone 12 Mini,64gb,metropcs,$245,True,True,False
+iPhone 12 Mini,64gb,metropcs,$190,True,False,True
+iPhone 12 Mini,64gb,metropcs,$190,True,False,False
+iPhone 12 Mini,64gb,metropcs,$105,False,True,True
+iPhone 12 Mini,64gb,metropcs,$140,False,True,False
+iPhone 12 Mini,64gb,metropcs,$105,False,False,True
+iPhone 12 Mini,64gb,metropcs,$105,False,False,False
+iPhone 12 Mini,64gb,unlocked,$190,True,True,True
+iPhone 12 Mini,64gb,unlocked,$245,True,True,False
+iPhone 12 Mini,64gb,unlocked,$190,True,False,True
+iPhone 12 Mini,64gb,unlocked,$190,True,False,False
+iPhone 12 Mini,64gb,unlocked,$105,False,True,True
+iPhone 12 Mini,64gb,unlocked,$140,False,True,False
+iPhone 12 Mini,64gb,unlocked,$105,False,False,True
+iPhone 12 Mini,64gb,unlocked,$105,False,False,False
+iPhone 12 Mini,128gb,cricket,$220,True,True,True
+iPhone 12 Mini,128gb,cricket,$280,True,True,False
+iPhone 12 Mini,128gb,cricket,$220,True,False,True
+iPhone 12 Mini,128gb,cricket,$220,True,False,False
+iPhone 12 Mini,128gb,cricket,$120,False,True,True
+iPhone 12 Mini,128gb,cricket,$160,False,True,False
+iPhone 12 Mini,128gb,cricket,$120,False,False,True
+iPhone 12 Mini,128gb,cricket,$120,False,False,False
+iPhone 12 Mini,128gb,sprint,$220,True,True,True
+iPhone 12 Mini,128gb,sprint,$280,True,True,False
+iPhone 12 Mini,128gb,sprint,$220,True,False,True
+iPhone 12 Mini,128gb,sprint,$220,True,False,False
+iPhone 12 Mini,128gb,sprint,$120,False,True,True
+iPhone 12 Mini,128gb,sprint,$160,False,True,False
+iPhone 12 Mini,128gb,sprint,$120,False,False,True
+iPhone 12 Mini,128gb,sprint,$120,False,False,False
+iPhone 12 Mini,128gb,us-cellular,$220,True,True,True
+iPhone 12 Mini,128gb,us-cellular,$280,True,True,False
+iPhone 12 Mini,128gb,us-cellular,$220,True,False,True
+iPhone 12 Mini,128gb,us-cellular,$220,True,False,False
+iPhone 12 Mini,128gb,us-cellular,$120,False,True,True
+iPhone 12 Mini,128gb,us-cellular,$160,False,True,False
+iPhone 12 Mini,128gb,us-cellular,$120,False,False,True
+iPhone 12 Mini,128gb,us-cellular,$120,False,False,False
+iPhone 12 Mini,128gb,at-t,$220,True,True,True
+iPhone 12 Mini,128gb,at-t,$280,True,True,False
+iPhone 12 Mini,128gb,at-t,$220,True,False,True
+iPhone 12 Mini,128gb,at-t,$220,True,False,False
+iPhone 12 Mini,128gb,at-t,$120,False,True,True
+iPhone 12 Mini,128gb,at-t,$160,False,True,False
+iPhone 12 Mini,128gb,at-t,$120,False,False,True
+iPhone 12 Mini,128gb,at-t,$120,False,False,False
+iPhone 12 Mini,128gb,other,$220,True,True,True
+iPhone 12 Mini,128gb,other,$280,True,True,False
+iPhone 12 Mini,128gb,other,$220,True,False,True
+iPhone 12 Mini,128gb,other,$220,True,False,False
+iPhone 12 Mini,128gb,other,$120,False,True,True
+iPhone 12 Mini,128gb,other,$160,False,True,False
+iPhone 12 Mini,128gb,other,$120,False,False,True
+iPhone 12 Mini,128gb,other,$120,False,False,False
+iPhone 12 Mini,128gb,verizon,$220,True,True,True
+iPhone 12 Mini,128gb,verizon,$280,True,True,False
+iPhone 12 Mini,128gb,verizon,$220,True,False,True
+iPhone 12 Mini,128gb,verizon,$220,True,False,False
+iPhone 12 Mini,128gb,verizon,$120,False,True,True
+iPhone 12 Mini,128gb,verizon,$160,False,True,False
+iPhone 12 Mini,128gb,verizon,$120,False,False,True
+iPhone 12 Mini,128gb,verizon,$120,False,False,False
+iPhone 12 Mini,128gb,t-mobile,$220,True,True,True
+iPhone 12 Mini,128gb,t-mobile,$280,True,True,False
+iPhone 12 Mini,128gb,t-mobile,$220,True,False,True
+iPhone 12 Mini,128gb,t-mobile,$220,True,False,False
+iPhone 12 Mini,128gb,t-mobile,$120,False,True,True
+iPhone 12 Mini,128gb,t-mobile,$160,False,True,False
+iPhone 12 Mini,128gb,t-mobile,$120,False,False,True
+iPhone 12 Mini,128gb,t-mobile,$120,False,False,False
+iPhone 12 Mini,128gb,metropcs,$220,True,True,True
+iPhone 12 Mini,128gb,metropcs,$280,True,True,False
+iPhone 12 Mini,128gb,metropcs,$220,True,False,True
+iPhone 12 Mini,128gb,metropcs,$220,True,False,False
+iPhone 12 Mini,128gb,metropcs,$120,False,True,True
+iPhone 12 Mini,128gb,metropcs,$160,False,True,False
+iPhone 12 Mini,128gb,metropcs,$120,False,False,True
+iPhone 12 Mini,128gb,metropcs,$120,False,False,False
+iPhone 12 Mini,128gb,unlocked,$220,True,True,True
+iPhone 12 Mini,128gb,unlocked,$280,True,True,False
+iPhone 12 Mini,128gb,unlocked,$220,True,False,True
+iPhone 12 Mini,128gb,unlocked,$220,True,False,False
+iPhone 12 Mini,128gb,unlocked,$120,False,True,True
+iPhone 12 Mini,128gb,unlocked,$160,False,True,False
+iPhone 12 Mini,128gb,unlocked,$120,False,False,True
+iPhone 12 Mini,128gb,unlocked,$120,False,False,False
+iPhone 12 Mini,256gb,cricket,$245,True,True,True
+iPhone 12 Mini,256gb,cricket,$315,True,True,False
+iPhone 12 Mini,256gb,cricket,$245,True,False,True
+iPhone 12 Mini,256gb,cricket,$245,True,False,False
+iPhone 12 Mini,256gb,cricket,$135,False,True,True
+iPhone 12 Mini,256gb,cricket,$180,False,True,False
+iPhone 12 Mini,256gb,cricket,$135,False,False,True
+iPhone 12 Mini,256gb,cricket,$135,False,False,False
+iPhone 12 Mini,256gb,sprint,$245,True,True,True
+iPhone 12 Mini,256gb,sprint,$315,True,True,False
+iPhone 12 Mini,256gb,sprint,$245,True,False,True
+iPhone 12 Mini,256gb,sprint,$245,True,False,False
+iPhone 12 Mini,256gb,sprint,$135,False,True,True
+iPhone 12 Mini,256gb,sprint,$180,False,True,False
+iPhone 12 Mini,256gb,sprint,$135,False,False,True
+iPhone 12 Mini,256gb,sprint,$135,False,False,False
+iPhone 12 Mini,256gb,us-cellular,$245,True,True,True
+iPhone 12 Mini,256gb,us-cellular,$315,True,True,False
+iPhone 12 Mini,256gb,us-cellular,$245,True,False,True
+iPhone 12 Mini,256gb,us-cellular,$245,True,False,False
+iPhone 12 Mini,256gb,us-cellular,$135,False,True,True
+iPhone 12 Mini,256gb,us-cellular,$180,False,True,False
+iPhone 12 Mini,256gb,us-cellular,$135,False,False,True
+iPhone 12 Mini,256gb,us-cellular,$135,False,False,False
+iPhone 12 Mini,256gb,at-t,$245,True,True,True
+iPhone 12 Mini,256gb,at-t,$315,True,True,False
+iPhone 12 Mini,256gb,at-t,$245,True,False,True
+iPhone 12 Mini,256gb,at-t,$245,True,False,False
+iPhone 12 Mini,256gb,at-t,$135,False,True,True
+iPhone 12 Mini,256gb,at-t,$180,False,True,False
+iPhone 12 Mini,256gb,at-t,$135,False,False,True
+iPhone 12 Mini,256gb,at-t,$135,False,False,False
+iPhone 12 Mini,256gb,other,$245,True,True,True
+iPhone 12 Mini,256gb,other,$315,True,True,False
+iPhone 12 Mini,256gb,other,$245,True,False,True
+iPhone 12 Mini,256gb,other,$245,True,False,False
+iPhone 12 Mini,256gb,other,$135,False,True,True
+iPhone 12 Mini,256gb,other,$180,False,True,False
+iPhone 12 Mini,256gb,other,$135,False,False,True
+iPhone 12 Mini,256gb,other,$135,False,False,False
+iPhone 12 Mini,256gb,verizon,$245,True,True,True
+iPhone 12 Mini,256gb,verizon,$315,True,True,False
+iPhone 12 Mini,256gb,verizon,$245,True,False,True
+iPhone 12 Mini,256gb,verizon,$245,True,False,False
+iPhone 12 Mini,256gb,verizon,$135,False,True,True
+iPhone 12 Mini,256gb,verizon,$180,False,True,False
+iPhone 12 Mini,256gb,verizon,$135,False,False,True
+iPhone 12 Mini,256gb,verizon,$135,False,False,False
+iPhone 12 Mini,256gb,t-mobile,$245,True,True,True
+iPhone 12 Mini,256gb,t-mobile,$315,True,True,False
+iPhone 12 Mini,256gb,t-mobile,$245,True,False,True
+iPhone 12 Mini,256gb,t-mobile,$245,True,False,False
+iPhone 12 Mini,256gb,t-mobile,$135,False,True,True
+iPhone 12 Mini,256gb,t-mobile,$180,False,True,False
+iPhone 12 Mini,256gb,t-mobile,$135,False,False,True
+iPhone 12 Mini,256gb,t-mobile,$135,False,False,False
+iPhone 12 Mini,256gb,metropcs,$245,True,True,True
+iPhone 12 Mini,256gb,metropcs,$315,True,True,False
+iPhone 12 Mini,256gb,metropcs,$245,True,False,True
+iPhone 12 Mini,256gb,metropcs,$245,True,False,False
+iPhone 12 Mini,256gb,metropcs,$135,False,True,True
+iPhone 12 Mini,256gb,metropcs,$135,False,False,True
+iPhone 12 Mini,256gb,metropcs,$135,False,False,False
+iPhone 12 Mini,256gb,unlocked,$245,True,True,True
+iPhone 12 Mini,256gb,unlocked,$315,True,True,False
+iPhone 12 Mini,256gb,unlocked,$245,True,False,True
+iPhone 12 Mini,256gb,unlocked,$245,True,False,False
+iPhone 12 Mini,256gb,unlocked,$135,False,True,True
+iPhone 12 Mini,256gb,unlocked,$180,False,True,False
+iPhone 12 Mini,256gb,unlocked,$135,False,False,True
+iPhone 12 Mini,256gb,unlocked,$135,False,False,False
+iPhone 12 Pro Max,128gb,cricket,$300,True,True,True
+iPhone 12 Pro Max,128gb,cricket,$385,True,True,False
+iPhone 12 Pro Max,128gb,cricket,$300,True,False,True
+iPhone 12 Pro Max,128gb,cricket,$300,True,False,False
+iPhone 12 Pro Max,128gb,cricket,$165,False,True,True
+iPhone 12 Pro Max,128gb,cricket,$220,False,True,False
+iPhone 12 Pro Max,128gb,cricket,$165,False,False,True
+iPhone 12 Pro Max,128gb,cricket,$165,False,False,False
+iPhone 12 Pro Max,128gb,sprint,$300,True,True,True
+iPhone 12 Pro Max,128gb,sprint,$385,True,True,False
+iPhone 12 Pro Max,128gb,sprint,$300,True,False,True
+iPhone 12 Pro Max,128gb,sprint,$300,True,False,False
+iPhone 12 Pro Max,128gb,sprint,$165,False,True,True
+iPhone 12 Pro Max,128gb,sprint,$220,False,True,False
+iPhone 12 Pro Max,128gb,sprint,$165,False,False,True
+iPhone 12 Pro Max,128gb,sprint,$165,False,False,False
+iPhone 12 Pro Max,128gb,us-cellular,$300,True,True,True
+iPhone 12 Pro Max,128gb,us-cellular,$385,True,True,False
+iPhone 12 Pro Max,128gb,us-cellular,$300,True,False,True
+iPhone 12 Pro Max,128gb,us-cellular,$300,True,False,False
+iPhone 12 Pro Max,128gb,us-cellular,$165,False,True,True
+iPhone 12 Pro Max,128gb,us-cellular,$220,False,True,False
+iPhone 12 Pro Max,128gb,us-cellular,$165,False,False,True
+iPhone 12 Pro Max,128gb,us-cellular,$165,False,False,False
+iPhone 12 Pro Max,128gb,at-t,$300,True,True,True
+iPhone 12 Pro Max,128gb,at-t,$385,True,True,False
+iPhone 12 Pro Max,128gb,at-t,$300,True,False,True
+iPhone 12 Pro Max,128gb,at-t,$300,True,False,False
+iPhone 12 Pro Max,128gb,at-t,$165,False,True,True
+iPhone 12 Pro Max,128gb,at-t,$220,False,True,False
+iPhone 12 Pro Max,128gb,at-t,$165,False,False,True
+iPhone 12 Pro Max,128gb,at-t,$165,False,False,False
+iPhone 12 Pro Max,128gb,other,$300,True,True,True
+iPhone 12 Pro Max,128gb,other,$385,True,True,False
+iPhone 12 Pro Max,128gb,other,$300,True,False,True
+iPhone 12 Pro Max,128gb,other,$300,True,False,False
+iPhone 12 Pro Max,128gb,other,$165,False,True,True
+iPhone 12 Pro Max,128gb,other,$220,False,True,False
+iPhone 12 Pro Max,128gb,other,$165,False,False,True
+iPhone 12 Pro Max,128gb,other,$165,False,False,False
+iPhone 12 Pro Max,128gb,verizon,$300,True,True,True
+iPhone 12 Pro Max,128gb,verizon,$385,True,True,False
+iPhone 12 Pro Max,128gb,verizon,$300,True,False,True
+iPhone 12 Pro Max,128gb,verizon,$300,True,False,False
+iPhone 12 Pro Max,128gb,verizon,$165,False,True,True
+iPhone 12 Pro Max,128gb,verizon,$220,False,True,False
+iPhone 12 Pro Max,128gb,verizon,$165,False,False,True
+iPhone 12 Pro Max,128gb,verizon,$165,False,False,False
+iPhone 12 Pro Max,128gb,t-mobile,$300,True,True,True
+iPhone 12 Pro Max,128gb,t-mobile,$385,True,True,False
+iPhone 12 Pro Max,128gb,t-mobile,$300,True,False,True
+iPhone 12 Pro Max,128gb,t-mobile,$300,True,False,False
+iPhone 12 Pro Max,128gb,t-mobile,$165,False,True,True
+iPhone 12 Pro Max,128gb,t-mobile,$220,False,True,False
+iPhone 12 Pro Max,128gb,t-mobile,$165,False,False,True
+iPhone 12 Pro Max,128gb,t-mobile,$165,False,False,False
+iPhone 12 Pro Max,128gb,metropcs,$300,True,True,True
+iPhone 12 Pro Max,128gb,metropcs,$385,True,True,False
+iPhone 12 Pro Max,128gb,metropcs,$300,True,False,True
+iPhone 12 Pro Max,128gb,metropcs,$300,True,False,False
+iPhone 12 Pro Max,128gb,metropcs,$165,False,True,True
+iPhone 12 Pro Max,128gb,metropcs,$220,False,True,False
+iPhone 12 Pro Max,128gb,metropcs,$165,False,False,True
+iPhone 12 Pro Max,128gb,metropcs,$165,False,False,False
+iPhone 12 Pro Max,128gb,unlocked,$300,True,True,True
+iPhone 12 Pro Max,128gb,unlocked,$385,True,True,False
+iPhone 12 Pro Max,128gb,unlocked,$300,True,False,True
+iPhone 12 Pro Max,128gb,unlocked,$300,True,False,False
+iPhone 12 Pro Max,128gb,unlocked,$165,False,True,True
+iPhone 12 Pro Max,128gb,unlocked,$220,False,True,False
+iPhone 12 Pro Max,128gb,unlocked,$165,False,False,True
+iPhone 12 Pro Max,128gb,unlocked,$165,False,False,False
+iPhone 12 Pro Max,256gb,cricket,$330,True,True,True
+iPhone 12 Pro Max,256gb,cricket,$420,True,True,False
+iPhone 12 Pro Max,256gb,cricket,$330,True,False,True
+iPhone 12 Pro Max,256gb,cricket,$330,True,False,False
+iPhone 12 Pro Max,256gb,cricket,$180,False,True,True
+iPhone 12 Pro Max,256gb,cricket,$240,False,True,False
+iPhone 12 Pro Max,256gb,cricket,$180,False,False,True
+iPhone 12 Pro Max,256gb,cricket,$180,False,False,False
+iPhone 12 Pro Max,256gb,sprint,$330,True,True,True
+iPhone 12 Pro Max,256gb,sprint,$420,True,True,False
+iPhone 12 Pro Max,256gb,sprint,$330,True,False,True
+iPhone 12 Pro Max,256gb,sprint,$330,True,False,False
+iPhone 12 Pro Max,256gb,sprint,$180,False,True,True
+iPhone 12 Pro Max,256gb,sprint,$240,False,True,False
+iPhone 12 Pro Max,256gb,sprint,$180,False,False,True
+iPhone 12 Pro Max,256gb,sprint,$180,False,False,False
+iPhone 12 Pro Max,256gb,us-cellular,$330,True,True,True
+iPhone 12 Pro Max,256gb,us-cellular,$420,True,True,False
+iPhone 12 Pro Max,256gb,us-cellular,$330,True,False,True
+iPhone 12 Pro Max,256gb,us-cellular,$330,True,False,False
+iPhone 12 Pro Max,256gb,us-cellular,$180,False,True,True
+iPhone 12 Pro Max,256gb,us-cellular,$240,False,True,False
+iPhone 12 Pro Max,256gb,us-cellular,$180,False,False,True
+iPhone 12 Pro Max,256gb,us-cellular,$180,False,False,False
+iPhone 12 Pro Max,256gb,at-t,$330,True,True,True
+iPhone 12 Pro Max,256gb,at-t,$420,True,True,False
+iPhone 12 Pro Max,256gb,at-t,$330,True,False,True
